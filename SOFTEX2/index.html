@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projetos.js" />
+
+</head>
+<body>
+    <script>
+        let numero1
+        let numero2
+        let soma
+        let subtracao
+        let multipicacao
+        let divisao
+        let escolha
+        
+        do{
+
+        escolha = window.prompt("Digite o número correspondente ao calculo que você deseja. 1 = +, 2 = -, 3 = X, 4 = / e 0 = sair")
+        
+        switch(parseInt(escolha)){
+                case 0:
+                        alert("Obrigado por usar o sistema.")
+                        break;
+                case 1:
+                        numero1 = window.prompt("Digite o primeiro numero");
+                        numero2 = window.prompt("Digite o segundo numero");
+                        soma = parseInt(numero1) + parseInt(numero2);
+                        alert("Você escolheu SOMA, a soma entre os dois números é: " + soma);
+                        break;
+                case 2:
+                        numero1 = window.prompt("Digite o primeiro numero")
+                        numero2 = window.prompt("Digite o segundo numero")
+                        subtracao = parseInt(numero1) - parseInt(numero2)
+                        alert("Você escolheu SUBTRAÇÃO, a subtração entre os dois números é: " + subtracao)
+                        break;
+                case 3:
+                        numero1 = window.prompt("Digite o primeiro numero")
+                        numero2 = window.prompt("Digite o segundo numero")
+                        multipicacao = parseInt(numero1) * parseInt(numero2)
+                        alert("Você escolheu MULTIPLICAÇÃO, a multiplicação entre os dois números é: " + multipicacao)
+                        break;
+                case 4:
+                        numero1 = window.prompt("Digite o primeiro numero")
+                        numero2 = window.prompt("Digite o segundo numero")
+                        divisao = parseInt(numero1) / parseInt(numero2)
+                        if(numero2 != 0)
+                                alert("Você escolheu DIVISÃO, a divisão entre os dois números é: " + divisao);
+                        else
+                                alert("Não pode dividir um número por 0")
+                        break;
+                default:
+                        alert("Opção invalida, tente novamente")
+                       
+               
+                       
+        }
+}while(escolha != 0);
+
+    </script>
+</body>
+</html>
