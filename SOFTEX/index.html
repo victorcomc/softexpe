@@ -9,17 +9,12 @@
 </head>
 <body>
     <script>
-        let nome = String;
-        let salario = parseInt;
-        let idade = parseInt;
-        let diploma = Boolean;
-        
-        nome = window.prompt("Digite o seu nome");
-        salario = window.prompt("Digite seu salario");
-        idade = window.prompt("Digite sua idade");
-        diploma = window.prompt("Digite sim ou não para se tem diploma");
+        let nota1 = window.prompt("Insira a primeira nota");
+        let nota2 = window.prompt("Insira a segunda nota");
+        let nota3 = window.prompt("Insira a terceira nota");
+        let media = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3))/3;
 
-        window.alert("Seu nome é: " + nome + "\r\rSeu salario é de: " + salario + "\r\rSua idade é: " + idade + "\r\rVocê possui diploma: " + diploma);
+        console.log(media);
     </script>
 </body>
 </html>
