@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projetos.js" />
+
+</head>
+<body>
+    <script>
+    let opcao, vl_saq;
+    let saldo = 0;
+    let min = 0;
+    let max = 2000;
+    let deposito = 0;
+    let conta = 0;
+
+    conta = parseInt(prompt("Digite o número da sua conta: "))
+do {
+    opcao = parseInt(prompt("Escolha uma opção:\n1 - Saque\n2 - Depósito\n3 - Saldo\n4 - Numero da sua conta\n0 - Sair"));
+    switch (opcao) {
+    case 1:
+        vl_saq = parseInt(prompt("Qual o valor do saque:"));
+        if (vl_saq>saldo) {
+            alert("O seu saldo não é suficiente para esse saque.")
+        } else {
+            saldo = saldo - vl_saq;
+            alert("Saque sendo Processado");
+            alert("....... Retire da bandeja");
+            alert("Agradecemos por utilizar os nossos serviços.");
+        }
+        break;
+        
+    case 2:
+        deposito = parseInt(prompt("Quanto você quer depositar?"))
+            alert("O valor de : R$ "+deposito+" foi depositado com sucesso,")
+            saldo = saldo + deposito;
+
+    case 3:
+
+        alert("O seu saldo em conta é de : R$ "+saldo+" Deseja fazer mais alguma coisa? Espero o outro menu.")
+
+    case 4:
+
+        alert("O numero da sua conta é: "+conta+" Deseja fazer mais alguma coisa? Espero o outro menu.")   
+
+    }
+} while (opcao != 0);
+    </script>
+</body>
+</html>
