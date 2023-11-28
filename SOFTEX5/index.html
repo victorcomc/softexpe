@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Notebook {
+            constructor(teclado, mouse, monitor){
+                this.teclado = teclado;
+                this.mouse = mouse;
+                this.monitor = monitor;
+            }
+            digitar(){
+                console.log("Você digita no teclado" + this.teclado);
+            }
+            clicar(){
+                console.log("Você clica no mouse" + this.mouse);
+            }
+            assistir(){
+                console.log("Você assiste pelo monitor" + this.monitor);
+            }
+        }
+        class Carro {
+            constructor(modelo, cor, qtdPorta){
+                this.modelo = modelo;
+                this.cor = cor;
+                this.qtdPorta = qtdPorta;
+            }
+            escolhaModelo(){
+                console.log("Escolha o modelo do carro" + this.modelo);
+            }
+            escolhaCor(){
+                console.log("Escolha a cor do carro" + this.cor);
+            }
+            escolhaQtdPorta(){
+                console.log("Escolha a quantidade de portas do carro" + this.qtdPorta);
+            }
+        }
+        class Falar {
+            constructor(voz, palavra, comunicar){
+                this.voz = voz;
+                this.palavra = palavra;
+                this.comunicar = comunicar;
+            }
+            afinacao(){
+                console.log("Qual a afinação da sua voz?" + this.voz);
+            }
+            idiomaEscrita(){
+                console.log("Qual o idioma da sua escrita?" + this.palavra);
+            }
+            idiomaFala(){
+                console.log("Qual o idioma da sua fala?" + this.comunicar);
+            }
+        }
+        class Estudar{
+            constructor(materia, horario, material){
+                this.materia = materia;
+                this.horario = horario;
+                this.material = material;
+            }
+            escolhaMateria(){
+                console.log("Qual sua materia?" + this.materia);
+            }
+            escolhaHorario(){
+                console.log("Qual seu horario?" + this.horario);
+            }
+            escolhaMaterial(){
+                console.log("Qual seu material?" + this.material);
+            }
+
+        }
+    </script>
+</body>
+</html>
