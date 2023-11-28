@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.alert("Bem vindo a calculadora de divisão")
+        numero1 = window.prompt("Digite o primeiro número")
+        numero2 = window.prompt("Digite o segundo número")
+        try{
+        divisao = numero1 / numero2;
+        if (isNaN(divisao)){
+            throw new Error;
+        }
+        }
+        catch (e){
+            window.alert("Digite dois numeros válidos para funcionar a divisão");
+        }
+        finally {
+            console.log("Esse valor sempre será mostrado") 
+        }
+        window.alert("Sua divisão é: " + divisao);
+        
+        
+    </script>
+</body>
+</html> 
